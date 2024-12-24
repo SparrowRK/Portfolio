@@ -384,7 +384,8 @@ const translate = {
 const ERROR_MESSAGE = "Some Error!";
 const SUCCESS_MESSAGE = "Successfuly send!";
 const form = document.querySelector(".contacts__form");
-form.addEventListener("submit", formSend); // назначаем обработчик на сабмит который и запускает функ формсенд
+
+form.addEventListener("submit", formSend);
 
 async function formSend(event) {
     event.preventDefault();
@@ -400,14 +401,16 @@ async function formSend(event) {
     if (response.ok) {
         colorMessage = "linear-gradient(to right, #00b09b, #96c93d)";
         showTostMessage(SUCCESS_MESSAGE, colorMessage);
-        form.reset();
     } else {
-        colorMessage = "linear-gradient(to right, red, red)"; // Красный цвет для ошибки
+        colorMessage = "linear-gradient(to right, red, red)";
         showTostMessage(ERROR_MESSAGE, colorMessage);
     }
+
+
+    form.reset();
 }
 
-function showTostMessage(message, colorMessage) { // блок с tostify.js  где мы в целом настраиваем размер блока и т.д.
+function showTostMessage(message, colorMessage) {
     Toastify({
         text: message,
         duration: 5000,
