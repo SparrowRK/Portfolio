@@ -18,20 +18,20 @@ $("a[href=#up]").click(function () {
 
 
 
-// логин
-const login = document.querySelector('.header-btn'),
-    logwin = document.querySelector('.loginwindow'),
-    logclose = document.querySelector('.loginwindow-close'),
-    logcloseAll = document.querySelector('.loginwindow-overlay');
+// // логин
+// const login = document.querySelector('.header-btn'),
+//     logwin = document.querySelector('.loginwindow'),
+//     logclose = document.querySelector('.loginwindow-close'),
+//     logcloseAll = document.querySelector('.loginwindow-overlay');
 
-login.addEventListener('click', () => {
-    logwin.classList.add('active');
-});
+// login.addEventListener('click', () => {
+//     logwin.classList.add('active');
+// });
 
-logclose.addEventListener('click', () => {
-    logwin.classList.remove('active');
-});
+// logclose.addEventListener('click', () => {
+//     logwin.classList.remove('active');
+// });
 
-logcloseAll.addEventListener('click', () => {
-    logwin.classList.remove('active');
-});
+// logcloseAll.addEventListener('click', () => {
+//     logwin.classList.remove('active');
+// });
