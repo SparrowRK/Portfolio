@@ -1,0 +1,42 @@
+.meet
+    padding: 100px 0 120px 0px
+    background-color: #ededed
+    // linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%)
+    .wrapper
+        width: 1159px
+        position: relative
+        margin: 0 auto
+        display: flex
+        gap: 180px
+    &__img
+        width: 438px
+        position: relative
+        &-man
+            z-index: 1
+        &-woman
+            position: absolute
+            bottom: -100px
+            right: 0px
+            z-index: 2
+    &__text
+        width: 540px
+        padding-top: 116px
+        &-title
+            font-weight: 700
+            font-size: 40px
+            color: $main-color
+        &-descr
+            font-weight: 400
+            font-size: 16px
+            line-height: 36px
+            color: #424242
+    &__btn
+        margin-top: 40px
+        background-color: #ededed
+        border: 2px solid $main-color
+        color: $main-color
+        &:active
+            border: none
+        &:hover
+            text-decoration-line: none
+            color: $main-color

@@ -1,0 +1,71 @@
+.navigation
+    position: absolute
+    bottom: 100px
+    left: 50%
+    transform: translateX(-50%)
+    display: flex
+
+.bar
+    height: 12px
+    width: 12px
+    margin: 7px
+    cursor: pointer
+    background-color: #a8a4a4
+    opacity: .7
+    border-radius: 10px
+    transition: all .4s ease
+    &:hover
+        opacity: 1
+        transform: scale(1.3)
+        background-color: $main-color
+        &:active
+            transform: scale(1.3)
+            outline: 3px solid #fcfdfb
+
+.slider
+    overflow: hidden
+
+.slides
+    width: 500%
+    display: flex
+
+.slide
+    width: 20%
+    transition: all .6s ease
+    img
+        width: 100%
+        opacity: 0.85
+
+input[name="r"]
+    position: absolute
+    visibility: hidden
+
+#r1:checked ~ .s1
+    margin-left: 0%
+
+#r2:checked ~ .s1
+    margin-left: -20%
+
+#r3:checked ~ .s1
+    margin-left: -40%
+
+#r4:checked ~ .s1
+    margin-left: -60%
+
+#r5:checked ~ .s1
+    margin-left: -80%
+
+#r6:checked ~ .s1
+    margin-left: 0%
+
+#r7:checked ~ .s1
+    margin-left: -20%
+
+#r8:checked ~ .s1
+    margin-left: -40%
+
+#r9:checked ~ .s1
+    margin-left: -60%
+
+#r10:checked ~ .s1
+    margin-left: -80%

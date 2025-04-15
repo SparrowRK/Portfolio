@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="title" content="Мое портфолио">
+    <meta name="description" content="Здесь вы сможете ознакомится с моими работами и узнать больше обо мне">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Мое портфолио">
+    <meta property="og:description" content="Здесь вы сможете ознакомится с моими работами и узнать больше обо мне">
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Мое портфолио">
+    <meta property="twitter:description"
+        content="Здесь вы сможете ознакомится с моими работами и узнать больше обо мне">
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png">
+
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/fav//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/fav//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/fav//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/fav//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/fav//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/fav//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/fav//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/fav//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/fav//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/fav//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/fav//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/fav//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/fav//favicon-16x16.png">
+    <link rel="manifest" href="icons/fav//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/fav//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <aside class="sidepanel">
+        <a href="https://www.linkedin.com/in/rostyslav-kanavenko-112337277/" class="sidepanel__link"
+            target="_blank"><img src="icons/social/linkedin.svg" alt="Linkedin"></a>
+        <a href="https://t.me/sparrowrk" class="sidepanel__link" target="_blank"><img src="icons/social/TelegramB.svg"
+                alt="Telegram"></a>
+        <a href="https://github.com/SparrowRK" class="sidepanel__link" target="_blank"><img
+                src="icons/social/github1.svg" alt="github"></a>
+        <div class="sidepanel__divider"></div>
+        <div class="sidepanel__text"><span data-key="web-title-social">Cоциальные ссылки</span></div>
+    </aside>
+
+
+    <div class="menu">
+        <div class="menu__block">
+
+            <div class="menu__close">
+                <img src="icons/menu/Close.svg" alt="close">
+            </div>
+
+            <button class="toggle">
+                <span class="circle"></span>
+            </button>
+
+            <nav>
+                <ul class="menu__list">
+                    <li class="menu__link"><a href="#aboutme" data-key="aboutmeb">ПРО МЕНЯ</a></li>
+                    <li class="menu__link"><a href="#resume" data-key="exper">МОЙ ОПЫТ</a></li>
+                    <li class="menu__link"><a href="#tools" data-key="myskill">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link"><a href="#portfolio" data-key="mywork">МОИ РАБОТЫ</a></li>
+                    <li class="menu__link"><a href="#contacts" data-key="mycontact">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu__social">
+                <a href="https://t.me/sparrowrk" target="_blank"><img src="icons/social/TelegramB.svg" alt="Telegram"
+                        class="soc1"></a>
+                <a href="https://github.com/SparrowRK" target="_blank"><img src="icons/menu/Github.svg" alt="Git"
+                        class="soc1"></a>
+                <a href="https://www.instagram.com/inscrutable_rk/" target="_blank"><img src="icons/menu/Instagram.svg"
+                        alt="Insta" class="soc1"></a>
+            </div>
+
+        </div>
+
+        <div class="menu__overlay"></div>
+    </div>
+
+    <section id="promo" class="promo">
+
+        <div class="hamburger">
+            <span></span>
+            <span class="long"></span>
+            <span></span>
+        </div>
+
+        <div class="langbtn">
+            <img class="langbtn-ua" src="icons/ua.png" alt="UA">
+            <img class="langbtn-en" src="icons/usa.png" alt="EN">
+            <img class="langbtn-ru" src="icons/rus.png" alt="RU">
+        </div>
+
+        <div class="container">
+
+            <h2 class="title title_fz16 promo__subtitle" data-key="web-title-submain">Меня зовут Канавенко Ростислав
+            </h2>
+            <h1 class="title title_fz48 promo__title" data-key="web-title-main">Я web-разработчик из города Киев</h1>
+
+            <div class="promo__btns">
+                <a href="#portfolio" class="promo__link btn" data-key="portfolio">Портфолио</a>
+                <a href="#aboutme" class="promo__link btn" data-key="aboutme"> Обо мне </a>
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+    <section id="aboutme" class="aboutme">
+        <div class="container">
+
+            <div class="aboutme__wrapper">
+                <div class="aboutme__pic">
+                    <img src="img/me3.webp" alt="Me" class="aboutme__pic-main">
+                </div>
+
+
+                <div class="aboutme__descr">
+
+                    <div class="aboutme__descr-main">
+                        <h2 class="title title_fz16 aboutme__descr-subtitle" data-key="aboutme">Обо мне</h2>
+                        <h2 class="title title_fz36 aboutme__descr-title" data-key="name">Меня зовут Ростислав</h2>
+                        <div class="divider2"></div>
+                        <div class="aboutme__descr-text" data-key="aboutdes">
+                            Мне 28 и я начинающий Frontend-разработчик, увлеченный созданием современных и удобных
+                            веб-интерфейсов и в целом страниц. Обладаю основными знаниями HTML, CSS. Базовым
+                            JavaScript и
+                            активно углубляюсь в изучение React и Redux. Мне нравится решать задачи, которые делают
+                            веб-приложения более функциональными и привлекательными для пользователей. Я стремлюсь
+                            писать чистый и понятный код, а также
+                            постоянно развивать свои навыки, заинтересован в показе и улучшении своих навыков
+                        </div>
+                    </div>
+
+                    <div class="aboutme__descr-mainlist">
+
+                        <div class="aboutme__descr-mainlist-column">
+
+                            <img src="icons/me&useful/webdev.svg" alt="web-des" class="icon">
+
+                            <div class="aboutme__descr-mainlist-sum">
+                                <h3 class="aboutme__descr-mainlist-title" data-key="webdev">Web-разработка</h3>
+                                <div class="aboutme__descr-mainlist-descr" data-key="webdev-descr">Как и мир, эта
+                                    область не стоит на месте,
+                                    постоянно развиваясь. Это конечно, создает определенные трудности в обучении, но
+                                    останавливаться на базовых знаниях не хочу. Современные технологии давно перешли
+                                    этот этап, и я также стремлюсь освоить как можно больше нового.
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="aboutme__descr-mainlist-column">
+
+                            <img src="icons/me&useful/Mobdev.svg" alt="web-des" class="icon">
+
+                            <div class="aboutme__descr-mainlist-sum">
+                                <h3 class="aboutme__descr-mainlist-title" data-key="appdev"> Разработка приложений</h3>
+                                <div class="aboutme__descr-mainlist-descr" data-key="appdev-descr"> На данный момент я
+                                    только начинаю осваивать
+                                    эту область, но она уже кажется мне одной из самых увлекательных сторон
+                                    веб-разработки.
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="aboutme__descr-mainlist-column">
+
+                            <img src="icons/me&useful/Design.svg" alt="web-des" class="icon">
+
+                            <div class="aboutme__descr-mainlist-sum">
+                                <h3 class="aboutme__descr-mainlist-title">JS</h3>
+                                <div class="aboutme__descr-mainlist-descr" data-key="js-dev">Огромная и Важнейшая
+                                    ступень (со своими
+                                    ступенями) в мире разработки. На данный момент мой приоритет в освоение и практике.
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="resume" class="resume">
+        <div class="container">
+
+            <h2 class="title title_fz16 title__section-title" data-key="Exp-subtitle">Опыт</h2>
+            <div class="title title_fz36 title__section-subtitle" data-key="Exp-title">Чем я буду полезен</div>
+            <div class=" divider"></div>
+
+
+            <div class="resume__wrapper">
+                <div class="resume__column">
+                    <h3 class="title title_fz20 resume__column-title" data-key="Educ">Образование</h3>
+
+                    <div class="resume__item">
+                        <ul>
+                            <li>
+                                <div class="resume__item-body">
+                                    <div class="resume__item-head">
+                                        <div class="resume__item-icon">
+                                            <img src="icons/me&useful/Courses.svg" alt="university">
+                                        </div>
+                                        <h4 class="title title_fz14">Udemy</h4>
+                                        <div class="resume__item-location" data-key="udemy-type">Курс Typescript</div>
+                                    </div>
+                                    <div class="resume__body" data-key="udemy-type-descr">
+                                        Начну обучение по курсу как только для себя смогу понять что знаний в JS уже
+                                        достаточно что бы перейти на этот новый уровень.
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="resume__item-body">
+                                    <div class="resume__item-head">
+                                        <div class="resume__item-icon">
+                                            <img src="icons/me&useful/Courses.svg" alt="university">
+                                        </div>
+                                        <h4 class="title title_fz14">Udemy</h4>
+                                        <div class="resume__item-location" data-key="udemy-WP">Курс WordPress</div>
+                                    </div>
+                                    <div class="resume__body" data-key="udemy-WP-descr">
+                                        Очень интересовал данный инструмент и благодаря курсу смог ознакомится с его
+                                        внутренней кухней, полезными особенностями и в целом усвоить насколько полезен
+                                        данный CMS для возможности передачи клиенту возможности поддерживать проект
+                                        после релиза.
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="resume__item-body">
+                                    <div class="resume__item-head">
+                                        <div class="resume__item-icon">
+                                            <img src="icons/me&useful/Courses.svg" alt="university">
+                                        </div>
+                                        <h4 class="title title_fz14">Udemy</h4>
+                                        <div class="resume__item-location" data-key="udemy-sub">Курсы JavaScript + React
+                                            + Redux</div>
+                                    </div>
+                                    <div class="resume__body" data-key="udemy-sub-descr">
+                                        Курс был начат с середины сентября и окончен полностью к концу февраля. Курс
+                                        позволил полностью пройти и практически закрепить базовый блок этого огромного
+                                        куска It мира. Мою работу с использованием React можете увидеть в соотвествующем
+                                        блоке портфолио. Redux не использовал но также по курсу получил базу знаний.
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="resume__item-body">
+                                    <div class="resume__item-head">
+                                        <div class="resume__item-icon">
+                                            <img src="icons/me&useful/Courses.svg" alt="university">
+                                        </div>
+                                        <h4 class="title title_fz14">Udemy</h4>
+                                        <div class="resume__item-location" data-key="udemy-sub2">Курсы по Web-разработке
+                                        </div>
+                                    </div>
+                                    <div class="resume__body" data-key="udemy-sub2-descr2">
+                                        Курс был пройден в июне-августе 2024 года (начало сентября с учетом
+                                        послекурсовой самостоятельной практики). В целом, благодаря ему я освоил базу
+                                        вёрстки (данный сайт и портфолио были созданы с учётом изученной информации на
+                                        курсе).
+                                    </div>
+                                    <div>
+                                        <a href="https://www.udemy.com/certificate/UC-d691dd68-6a9b-44ad-ae63-4149fec34e47/"
+                                            data-key="sertifudem"></a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="resume__item-body">
+                                    <div class="resume__item-head">
+                                        <div class="resume__item-icon">
+                                            <img src="icons/me&useful/University.svg" alt="university">
+                                        </div>
+                                        <h4 class="title title_fz14" data-key="VPU">ВПУ №33</h4>
+                                        <div class="resume__item-location" data-key="VPU-sub">Диплом специалиста |
+                                            Киев(2014-2016)</div>
+                                    </div>
+                                    <div class="resume__body" data-key="VPU-descr">
+                                        Среднее профессиональное образование в сфере гостинично-ресторанного бизнеса,
+                                        квалификация — "Мастер ресторанного обслуживания".
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume__column">
+                    <h3 class="title title_fz20 resume__column-title" data-key="ExpWork">Опыт работы</h3>
+
+                    <div class="resume__item">
+                        <ul>
+                            <li>
+                                <div class="resume__item-body">
+                                    <div class="resume__item-head">
+                                        <div class="resume__item-icon">
+                                            <img src="icons/me&useful/Developer.svg" alt="university">
+                                        </div>
+                                        <h4 class="title title_fz14">Front-End Developer</h4>
+                                        <div class="resume__item-location" data-key="learn-test">Самобучение и тестовые
+                                            задачки</div>
+                                    </div>
+                                    <div class="resume__body" data-key="learn-test-descr">
+                                        На текущий момент не полный 6 месяц в рамках самообучения как с помощью курсов
+                                        так и различных тестов/задач и своих идей. Работа с макетами, верстка и пока еще
+                                        минимальное по наполнению использование JS кода. Реализацию лендингов можно
+                                        увидеть ниже в разделе Портфолио.
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="resume__item-body">
+                                    <div class="resume__item-head">
+                                        <div class="resume__item-icon">
+                                            <img src="icons/me&useful/Design.svg" alt="university">
+                                        </div>
+                                        <h4 class="title title_fz14" data-key="CustS">Customer Support-GR8tech</h4>
+                                        <div class="resume__item-location" data-key="CustS-title">Онлайн поддержка
+                                            клиентов</div>
+                                    </div>
+                                    <div class="resume__body" data-key="CustS-descr">
+                                        Поддержка клиентов в реальном времени через 3 канала связи(Колл центр\Онлайн
+                                        чаты\Еmail)+Eng. Навыки, которые были получены и которые хотелось бы выделить:
+                                        командная работа, многозадачность, организация рабочего
+                                        процесса\тайм-менеджмент,клиентоориентированность а также структурирование и
+                                        использование огромного объема информации, которая могла меняться еженедельно.
+                                        Внимание к деталям.
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="resume__item-body">
+                                    <div class="resume__item-head">
+                                        <div class="resume__item-icon">
+                                            <img src="icons/me&useful/Courses.svg" alt="university">
+                                        </div>
+                                        <h4 class="title title_fz14" data-key="Hotres">Отельно-ресторанный бизнес</h4>
+                                        <div class="resume__item-location" data-key="Hotres-sub">Бармен(бармен-кассир)
+                                        </div>
+                                    </div>
+                                    <div class="resume__body" data-key="Hotres-des">
+                                        Порядка 6 лет опыта работы в сфере. В заведениях разного уровня и типа. Навыки,
+                                        которые хотелось бы выделить: коммуникабельность, стрессоустойчивость. Ведение и
+                                        учет рабочей документации, технические навыки характерны для сферы.
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <!-- <section class="certificates">
+
+        <div class="container">
+            <h2 class="title title_fz16 title__section-title" data-key="certificates">Мои сертификаты</h2>
+
+            <div class="divider"></div>
+
+            <div class="certificates__wrapper">
+
+                <img class="certificates__arrowprev" src="img/arrowprev.svg" alt="arrowprev">
+
+                <div class="certificates__imgs">
+
+                    <a class="certificates__imgs-link"
+                        href="https://www.udemy.com/certificate/UC-d691dd68-6a9b-44ad-ae63-4149fec34e47/"
+                        target="_blank"><img class="certificates__imgs-img" src="img/certif1.PNG" alt="sertificat1"></a>
+                    <a class="certificates__imgs-link"
+                        href="https://www.udemy.com/certificate/UC-360283dc-062c-426c-b2ca-0a785797a91a/"
+                        target="_blank"><img class="certificates__imgs-img" src="img/certif2.PNG" alt="sertificat2"></a>
+                    <a class="certificates__imgs-link"
+                        href="https://www.udemy.com/certificate/UC-fab67ba6-8ac2-440d-a034-3c0aa46c408d/"
+                        target="_blank"><img class="certificates__imgs-img" src="img/certif3.PNG" alt="sertificat3"></a>
+                    <a class="certificates__imgs-link"
+                        href="https://www.freecodecamp.org/certification/fcc8a1cbf47-24a1-4fb4-ba48-ae588e1b43d7/responsive-web-design"
+                        target="_blank"><img class="certificates__imgs-img" src="img/certif1.1.jpg"
+                            alt="sertificat4"></a>
+                    <a class="certificates__imgs-link"
+                        href="https://www.freecodecamp.org/certification/fcc8a1cbf47-24a1-4fb4-ba48-ae588e1b43d7/javascript-algorithms-and-data-structures-v8"
+                        target="_blank"><img class="certificates__imgs-img" src="img/certif2.1.jpg"
+                            alt="sertificat5"></a>
+                </div>
+
+                <img class="certificates__arrownext" src="img/arrownext.svg" alt="arrownext">
+
+            </div>
+        </div>
+
+    </section> -->
+
+    <section id="tools" class="tools">
+        <div class="container">
+
+            <h2 class="title title_fz16 title__section-title" data-key="skills">Навыки</h2>
+            <div class="title title_fz36 title__section-subtitle" data-key="skills-main">Что я использую в работе </div>
+            <div class="divider"></div>
+
+
+            <div class="tools__wrapper">
+
+                <div class="tools__item">
+                    <img src="icons/learn/html5.svg" alt="HTML5">
+                    <h3 class="title_fz14 tools__item-name">HTML5</h3>
+                    <div class="tools__item-descr" data-key="html-desc">Именно он создает каркас сайта или приложения, а
+                        пятая версия
+                        позволит мне создавать более SEO-оптимизированную структуру продукта</div>
+                </div>
+
+                <div class="tools__item">
+                    <img src="icons/learn/css3.svg" alt="CSS3">
+                    <h3 class="title_fz14 tools__item-name">CSS3</h3>
+                    <div class="tools__item-descr" data-key="css-descr">Этот язык стилей позволяет создавать абсолютно
+                        любой внешний видвашего сайта или приложения. <br> Все ограничивается только фантазией!</div>
+                </div>
+
+                <div class="tools__item">
+                    <img src="icons/learn/JS.svg" alt="JavaScript">
+                    <h3 class="title_fz14 tools__item-name">Java Script</h3>
+                    <div class="tools__item-descr" data-key="js-descr">Этот язык программирования позволяет оживить все
+                        что угодно:
+                        слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
+                </div>
+
+
+                <div class="tools__item">
+                    <img src="icons/learn/vscode.svg" alt="Vs-code">
+                    <h3 class="title_fz14 tools__item-name">VS-Code</h3>
+                    <div class="tools__item-descr" data-key="vsc-descr">Это мощный и удобный редактор кода, который
+                        поддерживает множество
+                        языков программирования и инструментов. Он обеспечивает удобную работу с проектами, расширяется
+                        с помощью плагинов и в целом предоставляет просто отличный функционал</div>
+                </div>
+
+
+
+                <div class="tools__item">
+                    <img src="icons/learn/React.svg" alt="React">
+                    <h3 class="title_fz14 tools__item-name">React</h3>
+                    <div class="tools__item-descr" data-key="react-descr">Эта библиотека позволяет создавать
+                        web-приложения. С ним можно
+                        создать максимально интерактивный продукт под любые цели</div>
+                </div>
+
+                <div class="tools__item">
+                    <img src="icons/learn/Node.js.svg" alt="Node.js">
+                    <h3 class="title_fz14 tools__item-name">Node.js</h3>
+                    <div class="tools__item-descr" data-key="node-descr">Эта платформа позволяет создавать бэкенд для
+                        продукта -
+                        “мозги”, которые будут выполнять действия, которые пользователь не видит</div>
+                </div>
+
+                <div class="tools__item">
+                    <img src="icons/learn/figma.svg" alt="Figma">
+                    <h3 class="title_fz14 tools__item-name">Figma</h3>
+                    <div class="tools__item-descr" data-key="figma-descr">Онлайн-платформа для дизайна интерфейсов и
+                        прототипирования,
+                        позволяет создавать визуальные концепты, макеты и т.д. Инструмент поддерживает совместную
+                        работу в реальном времени обеспечивая эффективность на всех этапах создания продукта.</div>
+                </div>
+
+                <div class="tools__item">
+                    <img src="icons/learn/Jquery.svg" alt="Jquery">
+                    <h3 class="title_fz14 tools__item-name">Jquery</h3>
+                    <div class="tools__item-descr" data-key="jq-descr">Библиотека Jquery позволит ускорить разработку
+                        <i> (без необходимости
+                            интеграция в проект не происходит)</i> но навык работы с ней присутствует
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="tools__rating">
+                <div class="tools__rating-item">
+                    <div class="title_fz14 tools__rating-title" data-key="base&pract"> База и практика <br> (HTML&CSS)
+                    </div>
+                    <div class="tools__rating-percent">80%</div>
+                    <div class="tools__rating-line"><span></span></div>
+                </div>
+                <div class="tools__rating-item">
+                    <div class="title_fz14 tools__rating-title" data-key="creative">Креативность</div>
+                    <div class="tools__rating-percent">75%</div>
+                    <div class="tools__rating-line"><span></span></div>
+                </div>
+                <div class="tools__rating-item">
+                    <div class="title_fz14 tools__rating-title" data-key="Js&pract">JS база и практика</div>
+                    <div class="tools__rating-percent">50%</div>
+                    <div class="tools__rating-line"><span style="width:100%"></span></div>
+                </div>
+                <div class="tools__rating-item">
+                    <div class="title_fz14 tools__rating-title">Desire for knowledge</div>
+                    <div class="tools__rating-percent">100%</div>
+                    <div class="tools__rating-line"><span style="width:100%"></span></div>
+                </div>
+                <div class="tools__rating-item">
+                    <div class="title_fz14 tools__rating-title">Soft skills</div>
+                    <div class="tools__rating-percent">90%</div>
+                    <div class="tools__rating-line"><span style="width:100%"></span></div>
+                </div>
+                <div class="tools__rating-item">
+                    <div class="title_fz14 tools__rating-title">TeamWork and Responsibility</div>
+                    <div class="tools__rating-percent">99.5%</div>
+                    <div class="tools__rating-line"><span style="width:100%"></span></div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+
+            <h2 class="title title_fz16 title__section-title" data-key="portfolio">Портфолио</h2>
+            <div class="title title_fz36 title__section-subtitle" data-key="works">Мои работы</div>
+            <div class="divider"></div>
+
+            <h4 class="portfolio__subtitle">HTML & SCSS & JS</h4>
+            <div class="portfolio__wrapper">
+
+
+                <div class="portfolio__block">
+                    <a href="portfolio/gym/src/index.html" class="portfolio__block-item" target="_blank">
+                        <img src="img/Female.webp" alt="Gym"></a>
+                    <button class="portfolio__block-link"><a href="https://github.com/SparrowRK/gymtest"
+                            target="_blank">GitHub</a></button>
+                </div>
+
+                <div class="portfolio__block">
+                    <a href="portfolio/travel/src/index.html" class="portfolio__block-item" target="_blank">
+                        <img src="img/space.webp" alt="Travel"></a>
+                    <button class="portfolio__block-link"><a href="https://github.com/SparrowRK/traveltest"
+                            target="_blank">GitHub</a></button>
+                </div>
+
+
+                <div class="portfolio__block">
+                    <a href="portfolio/courses/src/index.html" class="portfolio__block-item" target="_blank">
+                        <img src="img/coures.webp" alt="Courses"></a>
+                    <button class="portfolio__block-link"><a href="https://github.com/SparrowRK/coursestest"
+                            target="_blank">GitHub</a></button>
+                </div>
+
+
+                <div class="portfolio__block">
+                    <a href="portfolio/basiclanding/src/index.html" class="portfolio__block-item" target="_blank">
+                        <img src="img/landing.webp" alt="landing"></a>
+                    <button class="portfolio__block-link"><a href="https://github.com/SparrowRK/lendingtest"
+                            target="_blank">GitHub</a></button>
+                </div>
+
+            </div>
+
+            <h4 class="portfolio__subtitle2">React</h4>
+
+            <div class="portfolio__wrapper2">
+                <div class="portfolio__block">
+                    <a href="https://sparrowrk.github.io/Store/" class="portfolio__block-item target=" _blank">
+                        <img src="img/store.jpg" alt="MyStore"></a>
+                    <button class="portfolio__block-link"><a href="https://github.com/SparrowRK/reactstore-gitfull-"
+                            target=" _blank">GitHub</a></button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+
+        <div class="container">
+
+            <div class="contacts__wrapper">
+
+                <div class="contacts__photo">
+                    <img src="img/me.webp" alt="me">
+                </div>
+
+
+                <div class="contacts__descr">
+
+                    <h2 class="title title_fz16 contacts__subtitle" data-key="contacts">Контакты</h2>
+                    <div class="title title_fz36 contacts__title" data-key="contacts-sub">Свяжитесь со мной</div>
+
+                    <div class="divider2"></div>
+
+
+                    <div class="title title_fz14 contacts__text" data-key="contacts-any">Любым удобным для вас способом:
+                    </div>
+
+                    <div class="contacts__social">
+                        <a href="https://www.linkedin.com/in/rostyslav-kanavenko-112337277/"
+                            class="contacts__social-link" target="_blank">
+                            <img src="icons/social/linkedin.svg" alt="linkedin"></a>
+                        <a href="https://t.me/sparrowrk" class="contacts__social-link" target="_blank">
+                            <img src="icons/social/TelegramB.svg" alt="telegram"></a>
+                        <a href="https://www.instagram.com/inscrutable_rk/" class="contacts__social-link"
+                            target="_blank">
+                            <img src="icons/social/InstagramB.svg" alt="Instagram"></a>
+                        <a href="viber://chat?number=%2B380635080859" class="contacts__social-link" target="_blank">
+                            <img src="icons/social/viber.svg" alt="viber"></a>
+                        <a href="https://www.facebook.com/john.gun.1" class="contacts__social-link" target="_blank">
+                            <img src="icons/social/FacebookB.svg" alt="facebook"></a>
+                    </div>
+
+                    <div class="title title_fz14 contacts__text" data-key="cont">Или оставьте ваши данные и я сам вам
+                        напишу:</div>
+
+                    <form action="php/index.php" method="POST" class="contacts__form">
+
+                        <div class="contacts__input">
+                            <input required minlength="2" pattern="[A-Za-zА-Яа-яЁё]+" title="Только буквы"
+                                name="persone" id="name" type="text">
+                            <label for="name" data-key="cont-name">Ваше Имя</label>
+                        </div>
+                        <div class="contacts__input">
+                            <input required name="email" id="email" type="email">
+                            <label for="email" data-key="cont-email">Ваша почта</label>
+                        </div>
+
+                        <div class="contacts__textarea">
+                            <textarea name="text" id="text"></textarea>
+                            <label for="text" data-key="cont-mess">Ваше сообщение</label>
+                        </div>
+
+                        <div class="contacts__triggers">
+                            <button type="submit" class="contacts__btn btn" data-key="cont-send">Отправить
+                                сообщение</button>
+
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>
+                                    <span>
+                                        <span data-key="cont-check">Я согласен(а) с </span>
+                                        <a href="policy/ru-policy.html" class="lang-link ru" data-key="cont-check2"
+                                            target="_blank">
+                                            политикой конфиденциальности
+                                        </a>
+                                        <a href="policy/en-policy.html" class="lang-link en" data-key="cont-check2"
+                                            target="_blank">
+                                            политикой конфиденциальности
+                                        </a>
+                                        <a href="policy/ua-policy.html" class="lang-link ua" data-key="cont-check2"
+                                            target="_blank">
+                                            политикой конфиденциальности
+                                        </a>
+                                    </span>
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </form>
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <a href="#promo" class="pageup">
+        <img src="icons/up.svg" alt="up">
+    </a>
+
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
