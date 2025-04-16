@@ -120,12 +120,11 @@ function setLanguage(lang) {
         }
     });
 
-    // Добавление класса активности для ссылок
     document.querySelectorAll(".lang-link").forEach((link) => {
         if (link.classList.contains(lang)) {
-            link.style.display = "inline"; // Отображаем активную ссылку
+            link.style.display = "inline";
         } else {
-            link.style.display = "none"; // Скрываем неактивные ссылки
+            link.style.display = "none";
         }
     });
 
@@ -138,6 +137,45 @@ function setLanguage(lang) {
     });
 
 }
+
+// cлайдер сертификатов
+
+const prevarrow = document.querySelector(".certificates__arrowprev"),
+    nextarrow = document.querySelector(".certificates__arrownext"),
+    imgs = document.querySelector('.certificates__imgs');
+
+
+function Slider() {
+    let offset = 0;
+
+    nextarrow.addEventListener("click", () => {
+        const screenWidth = window.innerWidth;
+        const step = screenWidth < 576 ? 310 : screenWidth < 768 ? 280 : screenWidth < 992 ? 365 : screenWidth < 1200 ? 325 : 350;
+        const max = screenWidth < 576 ? 1550 : screenWidth < 768 ? 1120 : screenWidth < 992 ? 1460 : screenWidth < 1200 ? 975 : 1050;
+
+        offset += step;
+        imgs.style.transform = `translateX(-${offset}px)`;
+
+        if (offset === max) {
+            offset -= max;
+            imgs.style.transform = `translateX(-${offset}px)`;
+        }
+    });
+
+    prevarrow.addEventListener("click", () => {
+        const screenWidth = window.innerWidth;
+        const step = screenWidth < 576 ? 310 : screenWidth < 768 ? 280 : screenWidth < 992 ? 365 : screenWidth < 1200 ? 325 : 350;
+        const max = screenWidth < 576 ? 1550 : screenWidth < 768 ? 1120 : screenWidth < 992 ? 1460 : screenWidth < 1200 ? 975 : 1050;
+
+        offset -= step;
+        if (offset < 0) {
+            offset = 0;
+        }
+
+        imgs.style.transform = `translateX(-${offset}px)`;
+    });
+}
+Slider();
 
 // обьект с переводом
 const translate = {
@@ -186,6 +224,7 @@ const translate = {
         "Hotres-sub": "Bartender (bartender-cashier)",
         "Hotres-des": "About 6 years of experience in the field. In establishments of various levels and types. Skills I would like to highlight: communication, stress resistance. Keeping and managing work documentation, technical skills typical for the field.",
 
+        "certificates": "My certificates",
 
         "skills": "Skills",
         "skills-main": "What I use in my work",
@@ -264,6 +303,7 @@ const translate = {
         "Hotres-sub": "Бармен(бармен-кассир)",
         "Hotres-des": "Порядка 6 лет опыта работы в сферею. В заведениях разного уровня и типа. Навыки, которые хотелось бы выделить: коммуникабельность, стрессоустойчивость. Ведение и учет рабочей документации, технические навыки характерны для сферы.",
 
+        "certificates": "Мои сертификаты",
 
         "skills": "Навыки",
         "skills-main": "Что я использую в работе",
@@ -344,6 +384,8 @@ const translate = {
         "Hotres-sub": "Бармен (бармен-касир)",
         "Hotres-des": "Близько 6 років досвіду роботи в цій галузі. У закладах різного рівня та типу. Навички, які я хотів би виділити: комунікабельність, стресостійкість. Ведення та облік робочої документації, технічні навички, притаманні цій галузі.",
 
+
+        "certificates": "Мої сертифікати",
 
         "skills": "Навички",
         "skills-main": "Що я використовую в роботі",
