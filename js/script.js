@@ -151,7 +151,7 @@ function Slider() {
     nextarrow.addEventListener("click", () => {
         const screenWidth = window.innerWidth;
         const step = screenWidth < 576 ? 310 : screenWidth < 768 ? 280 : screenWidth < 992 ? 365 : screenWidth < 1200 ? 325 : 350;
-        const max = screenWidth < 576 ? 1550 : screenWidth < 768 ? 1120 : screenWidth < 992 ? 1460 : screenWidth < 1200 ? 975 : 1050;
+        const max = screenWidth < 576 ? 1860 : screenWidth < 768 ? 1400 : screenWidth < 992 ? 1825 : screenWidth < 1200 ? 1300 : 1400;
 
         offset += step;
         imgs.style.transform = `translateX(-${offset}px)`;
@@ -165,7 +165,8 @@ function Slider() {
     prevarrow.addEventListener("click", () => {
         const screenWidth = window.innerWidth;
         const step = screenWidth < 576 ? 310 : screenWidth < 768 ? 280 : screenWidth < 992 ? 365 : screenWidth < 1200 ? 325 : 350;
-        const max = screenWidth < 576 ? 1550 : screenWidth < 768 ? 1120 : screenWidth < 992 ? 1460 : screenWidth < 1200 ? 975 : 1050;
+        const max = screenWidth < 576 ? 1550 : screenWidth < 768 ? 1120 : screenWidth < 992 ? 1460 : screenWidth < 1200 ? 975 : 1400;
+
 
         offset -= step;
         if (offset < 0) {
@@ -204,7 +205,7 @@ const translate = {
         "Exp-title": "How I can be useful",
         "Educ": "Education",
         "udemy-type": "TypeScript Course",
-        "udemy-type-descr": "I will start learning the course as soon as I feel that my knowledge of JavaScript is sufficient to move to this new level.",
+        "udemy-type-descr": "The course is completed; currently working on deeper understanding and gaining hands-on experience (tasks, practical application).",
         "udemy-WP": "WordPress Course",
         "udemy-WP-descr": "A small but useful course — another piece of the FrontEnd world. I was very interested in this tool, and thanks to the course, I got familiar with its inner workings, useful features, and overall understood how convenient this CMS is for giving clients the ability to maintain a project after release.",
         "udemy-sub": "JavaScript + React + Redux Courses",
@@ -283,7 +284,7 @@ const translate = {
         "Exp-title": "Чем я буду полезен",
         "Educ": "Образование",
         "udemy-type": "Курс Typescript",
-        "udemy-type-descr": "Начну обучение по курсу как только для себя пойму что знаний в JS уже достаточно что бы уверенно перейти на этот новый уровень.",
+        "udemy-type-descr": "Курс завершен, в процессе детальное знакомоство и набивание руки (задачки, практическое применение)",
         "udemy-WP": "Курс WordPress",
         "udemy-WP-descr": "Небольшой, но полезный курс — ещё одна крупица в мир FrontEnd. Меня очень интересовал этот инструмент, и благодаря курсу я смог познакомиться с его внутренней кухней, полезными особенностями и в целом понять, насколько удобен этот CMS для передачи клиенту возможности поддерживать проект после релиза.",
         "udemy-sub": "Курсы JavaScript + React + Redux",
@@ -364,7 +365,7 @@ const translate = {
         "Exp-title": "Чим я можу бути корисний",
         "Educ": "Освіта",
         "udemy-type": "Курс TypeScript",
-        "udemy-type-descr": "Почну навчання за курсом, як тільки зрозумію, що мої знання JavaScript достатні, щоб впевнено перейти на новий рівень.",
+        "udemy-type-descr": "Курс завершено, наразi бiльш детальне ознайомлення та набивання руки (задачки, практичне застосування).",
         "udemy-WP": "Курс WordPress",
         "udemy-WP-descr": "Невеликий, але корисний курс + ще одна частина світу FrontEnd. Мене дуже цікавив цей інструмент, і завдяки курсу я ознайомився з його внутрішньою кухнею, корисними функціями та загалом зрозумів, наскільки зручно цей CMS підходить для передачі клієнту можливості підтримувати проєкт після релізу.",
         "udemy-sub": "Курси JavaScript + React + Redux",
